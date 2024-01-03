@@ -28,6 +28,13 @@ Module.register("MMM-Billigbrus", {
             Authorization: `Bearer ${this.config.apiKey}`,
         };
 
+        var products = {
+            1969: 1,
+            191870: 15,
+            191943: 10,
+            191965: 1,
+          };
+
         // Fetch data from the API
         fetch(url, { headers })
             .then(function (response) {
@@ -40,8 +47,11 @@ Module.register("MMM-Billigbrus", {
 
                     // Find the product with the lowest price using forEach
                     data.data.products.forEach(function (current) {
+
                         if(current.current_price){
-                            if(current.current_price.price < cheapest.current_price.price){
+                            current.current_pricepr = current.current_price.price / (products[1969] ? products[1969] : 1)
+                            
+                            if(current.current_pricepr < cheapest.current_pricepr){
                                 cheapest = current;
                             } 
                         }
