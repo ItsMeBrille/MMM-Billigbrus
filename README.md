@@ -11,6 +11,8 @@ The MMM-Billigbrus module is a MagicMirror² module to track the lowest grocery 
    ```sh
    git clone https://github.com/ItsMeBrille/MMM-Billigbrus.git
    ```
+3. Make a user on kassal.app and create and copy an API key from the API tab.
+4. Add the module in config.js, using your copied key.
 
 ## Configuration
 
