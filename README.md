@@ -1,6 +1,6 @@
 # MMM-Billigbrus
 
-The MMM-Billigbrus module is a MagicMirror² module designed to display the lowest priced Coca-Cola product from the Kassal.app API.
+The MMM-Billigbrus module is a MagicMirror² module to track the lowest grocery store prices in Norway. I made it because I want to know when the soda is cheapest.
 
 ![Screenshot](screenshot.png)
 
